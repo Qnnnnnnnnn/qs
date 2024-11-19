@@ -10,15 +10,15 @@
       color: white;
       margin: 0;
       padding: 0;
+      background-image: url('qsimg/dw.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      width: 100vw;
+      overflow: hidden;
     }
-    .dw {
-      position: absolute;
-      width: 80vw;
-      height: 80vh;
-      margin-left: 30px;
-      background-color: lightgray;
-    }
-
 
     .main-image {
       width: 100%;
@@ -26,113 +26,106 @@
       object-fit: contain;
     }
 
-
     .overlay-image {
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 15%;
+      width: 10vw;
       height: auto;
       opacity: 0.7;
       pointer-events: none;
     }
 
     #overlay1 {
-      top: 104%;
-      left: 16%;
+      top: 75%;
+      left: 9%;
     }
 
     #overlay2 {
-      top: 23%;
-      left: 45%;
+      top: 8%;
+      left: 38%;
+      transform: translateX(-50%);  
     }
 
     #overlay3 {
-      top: 104%;
-      left: 75%;
+      top: 75%;
+      left: 57%;
     }
 
     #overlay4 {
-      top: 63%;
-      left: 105%;
+      top: 40%;
+      left: 80%;
     }
+
     .overlay-text {
       position: absolute;
-      width: 100%;
       color: white;
       font-size: 16px;
       text-align: center;
+      width: 100%;
       pointer-events: auto;
     }
 
-
     #text1 {
-      top: 85%;
-      left: -34%;
+      top: 70%;
+      left: -36%;
+      font-size: 18px;
     }
-
 
     #text2 {
-      top: 37%;
-      left: -5%;
-    }
+      top: 28%;
+      left: -12%;
 
+      font-size: 18px;
+    }
 
     #text3 {
-      top: 85%;
-      left: 24%;
+      top: 70%;
+      left: 12%;
+      font-size: 18px;
     }
-
 
     #text4 {
-      top: 78%;
-      left: 55%;
-    }
-    #text5 {
-      top: 15%;
-      left: -40%;
-      font-size: 30px;
+      top: 59%;
+      left: 35%;
+      font-size: 18px;
     }
 
+    #text5 {
+      top: 10%;
+      left: 5%;
+      font-size: 24px;
+    }
 
     .overlay-text a {
       color: white;
       text-decoration: none;
       font-weight: bold;
     }
-
-
-
   </style>
 </head>
 <body>
-<div class="dw">
-  <img  class=".main-image" src="qsimg/dw.png" >
-  <img src="qsimg/zx.jpg" alt="覆盖图1" class="overlay-image" id="overlay1" >
-  <div class="overlay-text" id="text1">
-    <a href="https://www.example1.com" target="_blank">朱静萱</a>
-  </div>
+<!-- 已移除灰色方框 -->
+<img src="qsimg/zx.jpg" alt="覆盖图1" class="overlay-image" id="overlay1">
+<div class="overlay-text" id="text1">
+  <a href="https://www.example1.com" target="_blank">朱静萱</a>
+</div>
 
-  <img src="qsimg/tx.jpg" alt="覆盖图2" class="overlay-image" id="overlay2" >
-  <div class="overlay-text" id="text2">
-    <a href="https://qnnnnnnnnn.github.io/Qn/lqn661/web/index.html" target="_blank">李倩楠</a>
-  </div>
+<img src="qsimg/tx.jpg" alt="覆盖图2" class="overlay-image" id="overlay2">
+<div class="overlay-text" id="text2">
+  <a href="https://qnnnnnnnnn.github.io/Qn/lqn661/web/index.html" target="_blank">李倩楠</a>
+</div>
 
-  <img src="qsimg/gy.jpg" alt="覆盖图3" class="overlay-image" id="overlay3" >
-  <div class="overlay-text" id="text3">
-    <a href="https://www.example1.com" target="_blank">刘光悦</a>
-  </div>
+<img src="qsimg/gy.jpg" alt="覆盖图3" class="overlay-image" id="overlay3">
+<div class="overlay-text" id="text3">
+  <a href="https://www.example1.com" target="_blank">刘光悦</a>
+</div>
 
-  <img src="qsimg/ly.jpg" alt="覆盖图4" class="overlay-image" id="overlay4" >
-  <div class="overlay-text" id="text4">
-    <a href="https://www.ly.com" target="_blank">李悦</a>
-  </div>
-  <div class="overlay-text" id="text5">
-    <a href="https://www.example1.com" target="_blank">返回班级</a>
-  </div>
+<img src="qsimg/ly.jpg" alt="覆盖图4" class="overlay-image" id="overlay4">
+<div class="overlay-text" id="text4">
+  <a href="https://www.ly.com" target="_blank">李佳音</a>
+</div>
 
-
+<div class="overlay-text" id="text5">
+  <a href="https://www.example1.com" target="_blank">返回班级</a>
 </div>
 </body>
 </html>
